@@ -62,13 +62,13 @@ def collate_fn(data):
     return audio_features, error_p.type(torch.int64), transcriptions.type(torch.int64)
 
 
-def create_k_fold_dataloaders(k_folds=10, random_seed=None):
+def create_k_fold_dataloaders(k_folds=10, random_seed=None, test=True):
     dataset = L1SpeechDataset()
     kfold = KFold(n_splits=k_folds, shuffle=True, random_state=random_seed)
     dataloaders = []
 
     for fold, (train_idx, val_idx) in enumerate(kfold.split(dataset), start=1):
-        test_dataset = L1SpeechDataset(split="test")
+        test_dataset = L1SpeechDataset(split="test") if test else None
         train_dataset = torch.utils.data.Subset(dataset, train_idx)
         val_dataset = torch.utils.data.Subset(dataset, val_idx)
 
@@ -91,7 +91,7 @@ def create_k_fold_dataloaders(k_folds=10, random_seed=None):
             batch_size=N_BATCHES, 
             shuffle=False, 
             collate_fn=collate_fn
-        )
+        ) if test else None
 
         dataloaders.append((train_dataloader, val_dataloader, test_dataloader))
 

@@ -121,9 +121,9 @@ class MelSpectrogramEncoder(torch.nn.Module):
     """
 
     def forward(self, x):
-        #mask = torch.squeeze(torch.sum((x != 0).float(), axis=-2))
-        #mask = torch.sum((mask != 0).float(), axis=-1)
-        #mask = mask.to("cpu")
+        mask = torch.squeeze(torch.sum((x != 0).float(), axis=-2))
+        mask = torch.sum((mask != 0).float(), axis=-1)
+        mask = mask.to("cpu")
 
 
         for conv_layer in self.convs:

@@ -18,10 +18,12 @@ class L1SpeechDataset(Dataset):
         self.transcript_df = pd.read_csv(
             self.annotation_file, encoding="utf-8", sep="\t"
         )
+        """
         self.transcript_df = self.transcript_df[
             self.transcript_df["file_identifier"].str.startswith("ss-")
             | self.transcript_df["file_identifier"].str.startswith("mss-")
         ]
+        """
         self.transcript_df = self.transcript_df.map(
             lambda x: x.strip() if isinstance(x, str) else x
         )
