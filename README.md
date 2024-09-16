@@ -50,6 +50,53 @@ Dhvani provides comprehensive phonetic feedback covering the full range of Hindi
 - Comparisons to English phonemes for non-native speakers
 - Special attention to challenging aspects like retroflex and aspirated consonants
 
+## Example Phoneme Feedback
+
+### Sentence:
+**"घड़ी में ढोलक का ध्वनि सुनाई दिया।"**  
+(Translation: "The sound of the drum was heard from the clock.")
+
+## Phoneme Feedback:
+
+### 1. Phoneme: घ (gha)
+- **Tongue position**: The back of the tongue should touch the soft palate.
+- **Lip movement**: Lips remain slightly apart, do not touch.
+- **Teeth placement**: Upper and lower teeth are apart.
+- **Common mistake**: Confusing घ (gha) with ग (ga) by not adding enough aspiration.
+  
+![Tongue Diagram for घ (gha)](feedback-mechanism-2.png)
+
+---
+
+### 2. Phoneme: ध (dha)
+- **Tongue position**: The tip of the tongue touches the alveolar ridge (just behind the upper front teeth).
+- **Lip movement**: Lips remain relaxed.
+- **Teeth placement**: Teeth remain apart.
+- **Common mistake**: Under-aspiration or blending with द (da).
+
+![Tongue Diagram for ध (dha)](feedback-mechanism-1.png)
+
+---
+
+### 3. Phoneme: छ (chha)
+- **Tongue position**: The front part of the tongue should touch the hard palate.
+- **Lip movement**: Lips stay relaxed, slightly apart.
+- **Teeth placement**: Upper and lower teeth should not touch.
+- **Common mistake**: Confusion with छ (chha) due to under-aspiration.
+
+![Tongue Diagram for च (cha)](feedback-mechanism-11.png)
+
+---
+
+### 4. Phoneme: ढ (dha)
+- **Tongue position**: The tongue is curled backward, touching the area just behind the alveolar ridge.
+- **Lip movement**: Lips remain relaxed.
+- **Teeth placement**: Upper and lower teeth should remain apart.
+- **Common mistake**: Incorrect retroflex articulation, blending it with द (da).
+
+![Tongue Diagram for ढ (dha)](feedback-mechanism.png)
+
+
 ## Future Work
 
 The research presents promising avenues for future development:
