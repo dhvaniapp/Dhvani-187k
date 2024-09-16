@@ -23,11 +23,6 @@ The output is then passed through a Classification Head with 67 units, correspon
 
 ![Our model architecture](model-overall.svg)
 ![Our feedback system](feedback-mechanism.svg)
-### Details of our layers
-<p align="center">
-  <img src="encoder.svg" height="600px"/> <img src="decoder.svg" height="600px"/>
-</p>
-
 ## Dataset
 
 The model is trained on a combination of:
