@@ -21,8 +21,8 @@ Dhvani's architecture consists of two main components:
 
 The output is then passed through a Classification Head with 67 units, corresponding to Hindi phonemes and special tokens.
 
-![Our model architecture](model-overall.svg)
-![Our feedback system](feedback-mechanism.svg)
+![Our model architecture](resources/model-overall.svg)
+![Our feedback system](resources/feedback-mechanism.svg)
 
 ## Dataset
 
@@ -54,48 +54,49 @@ Dhvani provides comprehensive phonetic feedback covering the full range of Hindi
 ## Example Phoneme Feedback
 
 ### Sentence:
-**"घोड़े ने ढलान पर छलांग लगाई।"**  
-(Translation: "The horse jumped down the slope.")
+**"घोड़ा ढलान पर छलांग लगाकर धूप में घास खाने लगा।"**  
+(Translation: "The horse jumped down the slope and started grazing in the sunlight.")
 
 ## Phoneme Feedback:
 
-### 1. Phoneme: घ (gha)
-- **Tongue position**: The back of the tongue should touch the soft palate.
+### 1. Phoneme: छ (chha)
+- **Tongue position**: The front of the tongue should touch the hard palate with strong aspiration.
+- **Lip movement**: Lips stay slightly apart.
+- **Teeth placement**: Upper and lower teeth should not touch.
+- **Common mistake**: Confusing छ (chha) with च (cha) due to under-aspiration, leading to unclear pronunciation.
+
+![Tongue Diagram for छ (chha)](resources/feedback-chha-diagram.png)
+
+---
+
+### 2. Phoneme: ध (dha)
+- **Tongue position**: The tip of the tongue touches the alveolar ridge (just behind the upper front teeth).
+- **Lip movement**: Lips remain relaxed.
+- **Teeth placement**: Upper and lower teeth remain apart.
+- **Common mistake**: Under-aspiration or blending with द (da).
+
+![Tongue Diagram for ध (dha)](resources/feedback-dha-diagram.png)
+
+---
+
+### 3. Phoneme: ढ (dha)
+- **Tongue position**: The tongue curls backward, touching the area just behind the alveolar ridge.
+- **Lip movement**: Lips remain relaxed.
+- **Teeth placement**: Upper and lower teeth remain apart.
+- **Common mistake**: Incorrect retroflex articulation, blending it with द (da).
+
+![Tongue Diagram for ढ (dha)](resources/feedback-dha-retroflex-diagram.png)
+
+---
+
+### 4. Phoneme: घ (gha)
+- **Tongue position**: The back of the tongue touches the soft palate.
 - **Lip movement**: Lips remain slightly apart, do not touch.
 - **Teeth placement**: Upper and lower teeth are apart.
 - **Common mistake**: Confusing घ (gha) with ग (ga) by not adding enough aspiration.
-  
-![Tongue Diagram for घ (gha)](feedback-gha-diagram.png)
 
----
+![Tongue Diagram for घ (gha)](resources/feedback-gha-diagram.png)
 
-### 2. Phoneme: ढ (dha)
-- **Tongue position**: The tongue is curled backward, touching the area just behind the alveolar ridge.
-- **Lip movement**: Lips remain relaxed.
-- **Teeth placement**: Upper and lower teeth should remain apart.
-- **Common mistake**: Incorrect retroflex articulation, blending it with द (da).
-
-![Tongue Diagram for ढ (dha)](feedback-dha-diagram.png)
-
----
-
-### 3. Phoneme: च (cha)
-- **Tongue position**: The front part of the tongue should touch the hard palate.
-- **Lip movement**: Lips stay relaxed, slightly apart.
-- **Teeth placement**: Upper and lower teeth should not touch.
-- **Common mistake**: Confusion with छ (chha) due to over-aspiration or unclear articulation.
-
-![Tongue Diagram for च (cha)](feedback-cha-diagram.png)
-
----
-
-### 4. Phoneme: छ (chha)
-- **Tongue position**: The front part of the tongue touches the hard palate with strong aspiration.
-- **Lip movement**: Lips stay slightly apart.
-- **Teeth placement**: Upper and lower teeth remain apart.
-- **Common mistake**: Under-aspiration, leading to incorrect pronunciation similar to च (cha).
-
-![Tongue Diagram for छ (chha)](feedback-chha-diagram.png)
 
 ## Future Work
 
