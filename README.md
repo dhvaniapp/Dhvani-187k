@@ -1,5 +1,5 @@
 # Dhvani: A Weakly-supervised Phonemic Error Detection and Feedback System for Hindi
-Accepted in Interspeech 2026, [pdf](https://www.isca-archive.org/interspeech_2025/rustagi25_interspeech.pdf)
+Accepted in Interspeech 2025, [pdf](https://www.isca-archive.org/interspeech_2025/rustagi25_interspeech.pdf)
 ## Introduction
 
 Dhvani is a novel Computer-Assisted Pronunciation Training (CAPT) system designed specifically for Hindi, addressing the critical gap in pronunciation tools for Indian languages. With over 500 million Hindi speakers, improving Hindi pronunciation is a vital step toward enhancing communication and connectivity within India's linguistically diverse landscape.
